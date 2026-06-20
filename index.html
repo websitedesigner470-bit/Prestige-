@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Prestige Rentals | Luxury Without Limits</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    background: #050505;
+    color: white;
+    font-family: Inter, sans-serif;
+  }
+
+  h1,h2,h3 { font-family: "Playfair Display", serif; }
+
+  /* HERO */
+  .hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url("https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=2000&q=80") center/cover;
+    opacity: 0.4;
+  }
+
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.7);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  h1 { font-size: 64px; }
+
+  .btn {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 22px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none;
+  }
+
+  .btn.primary {
+    background: white;
+    color: black;
+  }
+
+  section {
+    padding: 100px 20px;
+    text-align: center;
+  }
+
+  .statement {
+    font-size: 36px;
+  }
+
+  /* GRID */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 20px;
+    margin-top: 50px;
+  }
+
+  .card {
+    background: #111;
+    border: 1px solid #222;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+
+  .card:hover { transform: scale(1.03); }
+
+  .card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+
+  .card h3 {
+    margin: 0;
+  }
+
+  .card p {
+    color: #aaa;
+    font-size: 14px;
+  }
+
+  .cta {
+    background: #111;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>Luxury Without Limits</h1>
+    <p>Supercars • Superyachts • Private Aviation</p>
+
+    <div>
+      <a class="btn" href="#fleet">Explore Fleet</a>
+      <a class="btn primary" href="https://wa.me/61414000111">Concierge</a>
+    </div>
+  </div>
+</div>
+
+<!-- STATEMENT -->
+<section>
+  <div class="statement">
+    Some experiences are rented.<br/>
+    Others are remembered forever.
+  </div>
+</section>
+
+<!-- CARS -->
+<section id="fleet">
+  <h2>Signature Fleet</h2>
+
+  <div class="grid">
+
+    <!-- Ferrari -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753" />
+      <div class="card-content">
+        <h3>Ferrari SF90 Stradale</h3>
+        <p>Hybrid hypercar performance</p>
+      </div>
+    </div>
+
+    <!-- Rolls Royce -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" />
+      <div class="card-content">
+        <h3>Rolls-Royce Phantom</h3>
+        <p>Ultimate luxury sedan experience</p>
+      </div>
+    </div>
+
+    <!-- Lamborghini -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" />
+      <div class="card-content">
+        <h3>Lamborghini Huracán</h3>
+        <p>Pure Italian performance</p>
+      </div>
+    </div>
+
+    <!-- Bentley -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1614200187524-dc4b892acf16" />
+      <div class="card-content">
+        <h3>Bentley Bentayga</h3>
+        <p>Luxury SUV elegance</p>
+      </div>
+    </div>
+
+    <!-- Yacht -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504512485720-7d83a16ee930" />
+      <div class="card-content">
+        <h3>Superyacht Experience</h3>
+        <p>Private ocean charter luxury</p>
+      </div>
+    </div>
+
+    <!-- Helicopter -->
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321" />
+      <div class="card-content">
+        <h3>Helicopter Transfer</h3>
+        <p>VIP aerial travel experience</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Your Next Experience Starts Here</h2>
+  <p style="color:#aaa;">Speak with our concierge team today.</p>
+
+  <a class="btn primary" href="https://wa.me/61414000111">
+    WhatsApp Concierge
+  </a>
+</section>
+
+</body>
+</html>
